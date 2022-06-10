@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Weather App
+        style 
+            include ../public/style.css
+        style.
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+        //- .wrapper.flex_box
+        
+
+
+    body
+        
+        div.wrapper.flex_box
+            form(action="/",id='form')
+                .input
+                    label
+                        | Get weather for:
+                    input.name(placeholder='city name...' type='text' id='input' class='form_elements')
+                    .button_wrapper
+                        button
+                            | submit
+                    br
+                    hr
+                    div#myvalue.form_elements
+            div.cover
+            
+            script
+                include ../public/index.js
+            //- .sign
+            //- | by masahito / 
+            //- a(href='http://www.ma5a.com/') ma5a.com
+
+            //- div.container
+            //-     form(action="/",id='form') 
+            //-         h1.heading Weather App  
+            //-         input(type="text" placeholder='Enter location' id='input' class='form_elements')
+            //-         button.form_elements search
+            //-     div#myvalue.form_elements
+            //-     script 
+            //-         include ../public/index.js
