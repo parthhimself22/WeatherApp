@@ -192,7 +192,7 @@ function init() {
   e.preventDefault()
   abcvalue = ''
   let new_location = input.value
-  let url = `http://localhost/weather?address=${new_location}`
+  let url = `/weather?address=${new_location}`
   fetch(url).then((response)=>{
       response.json().then((data)=>{
           if(data.error){
